@@ -42,8 +42,8 @@ export default function User() {
         setSelectedUser(value);
         
         const avatars = {
-            Yukkesh: 'avatar_yukkesh.png',
-            Madhesh: 'avatar_madhesh.png',
+            Yukkesh: 'https://s3-alpha-sig.figma.com/img/1099/2dd1/50bf7910cc579cb35352125504544458?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecYuzGm1qsTlZ3EGTaEQgNsZeSLsRAOk7TyOsyt9IkhQFvH8Qg1cg0ex-UE0dvs~rKrTpCjP9rBiB6k0S453StdPwBq4DocNGSfk~bE6YaDciekQyXRBrxmndskwdlBlnBtiBM21TSVAZIxfjIg1Y6ZObOztQYCIOBk4F4betUZ3iQWRm0DugWjG8Xw0M0nSFqz0PzjP--4MZfN-nuMl7gzAjC7m~jSGY~9ThDcZ~oDXP0rzY1wwqlL6bGPm7QS1L1NN47Anfb5Yv0TxDDjuAr7-Q-3X2iarmh1OzpEFMTg6r9-ylYk958hpRXPbkWoZ18pw88S9~iolQh4cklVReA__',
+            Madhesh: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         };
         setSelectedAvatar(avatars[value]);
     };
@@ -66,8 +66,8 @@ export default function User() {
                 <Box sx={{ minWidth: 200, borderRadius:"50px", display: ":flex", flexDirection:"row" }}>
                     <FormControl fullWidth>
                         <Select labelId="demo-simple-select-label" id="demo-simple-select" sx={{ display: 'flex', alignItems: 'center' }} value={selectedUser} placeholder='User' sx={{borderRadius:"50px"}} onChange={handleChange}>
-                            <MenuItem value={"Yukkesh"} sx={{display:'flex', flexDirection:"row"}}> <Box display="flex" flexDirection="row"> <Avatar sx={{ width: 25, height: 25 }}/> <Typography fontWeight="bold" color="#009379" ml="5px">Yukkesh</Typography></Box></MenuItem>
-                            <MenuItem value={"Madhesh"}><Box display="flex" flexDirection="row"><Avatar sx={{ width: 25, height: 25 }}/><Typography fontWeight="bold" color="#009379" ml="5px">Madhesh</Typography></Box></MenuItem>
+                            <MenuItem value={"Yukkesh"} sx={{display:'flex', flexDirection:"row"}}> <Box display="flex" flexDirection="row"> <Avatar sx={{ width: 25, height: 25 }} src='https://s3-alpha-sig.figma.com/img/1099/2dd1/50bf7910cc579cb35352125504544458?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecYuzGm1qsTlZ3EGTaEQgNsZeSLsRAOk7TyOsyt9IkhQFvH8Qg1cg0ex-UE0dvs~rKrTpCjP9rBiB6k0S453StdPwBq4DocNGSfk~bE6YaDciekQyXRBrxmndskwdlBlnBtiBM21TSVAZIxfjIg1Y6ZObOztQYCIOBk4F4betUZ3iQWRm0DugWjG8Xw0M0nSFqz0PzjP--4MZfN-nuMl7gzAjC7m~jSGY~9ThDcZ~oDXP0rzY1wwqlL6bGPm7QS1L1NN47Anfb5Yv0TxDDjuAr7-Q-3X2iarmh1OzpEFMTg6r9-ylYk958hpRXPbkWoZ18pw88S9~iolQh4cklVReA__'/> <Typography fontWeight="bold" color="#009379" ml="5px">Yukkesh</Typography></Box></MenuItem>
+                            <MenuItem value={"Madhesh"}><Box display="flex" flexDirection="row"><Avatar sx={{ width: 25, height: 25 }} src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'/><Typography fontWeight="bold" color="#009379" ml="5px">Madhesh</Typography></Box></MenuItem>
                         </Select>
                     </FormControl>
                 </Box>

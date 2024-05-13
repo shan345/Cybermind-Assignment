@@ -52,7 +52,7 @@ function Comment({selectedUser, selectedAvatar}) {
               <Grid item container justifyContent="flex-start" direction="row" alignItems="flex-start">
 
                 <Grid item xs={1}>
-                  <Avatar sx={{ width: 30, height: 30 }}></Avatar>
+                  <Avatar sx={{ width: 30, height: 30 }} src={selectedAvatar}></Avatar>
                 </Grid>
 
                 <Grid item sx={{ml:"8px"}} xs={9}>
@@ -72,7 +72,7 @@ function Comment({selectedUser, selectedAvatar}) {
 
           <Grid item container spacing={1} direction="row" alignItems="center" justifyContent="flex-end" mt="15px">
             <Grid item>
-              < Avatar sx={{ width: 30, height: 30 }}></Avatar>
+              < Avatar sx={{ width: 30, height: 30 }} src={selectedAvatar}></Avatar>
             </Grid>
             
             <Grid item>
